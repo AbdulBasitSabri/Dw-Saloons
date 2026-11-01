@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #1e0911;
+    --bg-burgundy: #270c17;
+    --bg-card: #2e0e1b;
+    --gold: #d4af37;
+    --gold-light: #f3d068;
+    --gold-dark: #9e7d23;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #1e0911;
+    color: #fcedd8;
+    overflow-x: hidden;
+  }
+
+  /* Strict Font Rule: Headings use Cursive, Details use Sans-serif */
+  h1, h2, h3, h4, h5, h6 {
+    font-family:  "Mea Culpa", cursive;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+  }
+
+  p, span, a, button, input, select, textarea, label, li, td, th {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-cursive {
+  font-family: 'Great Vibes', cursive !important;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+}
+
+/* Luxury Gold Button Styling */
+.btn-gold {
+  background-color: #d4af37;
+  color: #1a060d;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.25);
+}
+.btn-gold:hover {
+  background-color: #e5c158;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.35);
+}
+
+.btn-gold-outline {
+  border: 1.5px solid #d4af37;
+  color: #fcedd8;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-gold-outline:hover {
+  background-color: rgba(212, 175, 55, 0.15);
+  border-color: #f3d068;
+  color: #f3d068;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #17050d;
+}
+::-webkit-scrollbar-thumb {
+  background: #471727;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Fluid Animations */
+@keyframes fadeInSubtle {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-subtle {
+  animation: fadeInSubtle 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
