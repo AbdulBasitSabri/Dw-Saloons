@@ -19,7 +19,7 @@ export const Navbar: React.FC = () => {
       
 
       {/* Main Navigation Bar */}
-      <nav className="bg-[#000]/95 backdrop-blur-md border-b border-[#d4af37]/25 px-4 lg:px-8 py-3.5 transition-all">
+      <nav className="`bg-[#000]/95` backdrop-blur-md border-b border-[#d4af37]/25 px-4 lg:px-8 py-3.5 transition-all">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Brand Logo */}
           <Link
@@ -83,7 +83,7 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-[78px] z-50 bg-black/60 backdrop-blur-sm lg:hidden flex justify-end">
+        <div className="fixed inset-0 `top-[78px]` z-50 bg-black/60 backdrop-blur-sm lg:hidden flex justify-end">
           <div className="w-72 bg-[#230913] border-l border-[#d4af37]/30 h-full p-6 flex flex-col justify-between shadow-2xl animate-in slide-in-from-right duration-300">
             <div className="flex flex-col gap-5">
               <div className="flex items-center justify-between pb-4 border-b border-[#d4af37]/20">

@@ -1,19 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import {
-  Calendar,
   Clock,
-  User,
   Phone,
-  Crown,
   MapPin,
   CheckCircle,
-  ExternalLink,
   MessageCircle,
   ListFilter,
   Navigation,
 } from 'lucide-react';
-import { SALON_INFO, CATALOGUE_PACKAGES, TEAM_MEMBERS, EXPLORE_SERVICES, BOOKING_FAQS } from '../data/salonData';
+import { SALON_INFO, BOOKING_FAQS } from '../data/salonData';
 import { saveBooking, getBookings} from '../utils/storage';
 import type { Booking } from '../utils/storage';
 import { BookingsManagerModal } from '../components/BookingsManagerModal';
@@ -158,7 +154,7 @@ export const AppointmentBooking: React.FC = () => {
 
         {/* Success Banner if newly submitted */}
         {lastSavedBooking && (
-          <div className="max-w-4xl mx-auto mb-10 p-6 rounded-2xl bg-gradient-to-r from-[#2a1309] via-[#351020] to-[#1e0811] border-2 border-[#d4af37] shadow-2xl animate-in fade-in">
+          <div className="max-w-4xl mx-auto mb-10 p-6 rounded-2xl `bg-gradient-to-r` from-[#2a1309] via-[#351020] to-[#1e0811] border-2 border-[#d4af37] shadow-2xl animate-in fade-in">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-[#d4af37] text-[#1a060d] flex items-center justify-center font-bold text-xl shrink-0">
@@ -212,7 +208,7 @@ export const AppointmentBooking: React.FC = () => {
           >
             {/* Interactive Map Card */}
             <div className="rounded-2xl overflow-hidden border border-[#d4af37]/35 bg-[#250a17] shadow-xl">
-              <div className="relative aspect-[16/10] w-full bg-[#1b0610]">
+              <div className="relative `aspect-[16/10]` w-full bg-[#1b0610]">
                 {/* Styled Map Embed representing F-11 Markaz Islamabad */}
                 <iframe
                   title="DW Saloons Studio Map"

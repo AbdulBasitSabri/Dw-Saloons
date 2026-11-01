@@ -16,7 +16,7 @@ export const SignatureVideoReel: React.FC<SignatureCardProps> = ({ item, delay =
       className="group relative rounded-2xl overflow-hidden border-2 border-[#d4af37]/30 bg-[#250a17] shadow-2xl transition-all duration-500 hover:border-[#d4af37] hover:shadow-[0_12px_30px_rgba(212,175,55,0.25)] flex flex-col"
     >
       {/* Image Container (Preserving original vertical card layout) */}
-      <div className="relative aspect-[9/14] sm:aspect-[3/4] w-full bg-[#1b0610] overflow-hidden">
+      <div className="relative `aspect-[9/14] sm:aspect-[3/4]` w-full bg-[#1b0610] overflow-hidden">
         <img
           src={item.poster}
           alt={item.title}
@@ -24,7 +24,7 @@ export const SignatureVideoReel: React.FC<SignatureCardProps> = ({ item, delay =
         />
 
         {/* Ambient Gradient Scrim */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/40 pointer-events-none" />
+        <div className="absolute inset-0 `bg-gradient-to-t` from-black/85 via-black/20 to-black/40 pointer-events-none" />
 
         {/* Top Header Badge */}
         <div className="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none z-10">
@@ -40,7 +40,7 @@ export const SignatureVideoReel: React.FC<SignatureCardProps> = ({ item, delay =
       </div>
 
       {/* Card Footer Details */}
-      <div className="p-4 bg-[#1f0913] border-t border-[#d4af37]/20 flex flex-col justify-between flex-grow">
+      <div className="p-4 bg-[#1f0913] border-t border-[#d4af37]/20 flex flex-col justify-between `flex-grow`">
         <div>
           <h4 className="font-cursive text-2xl sm:text-3xl text-amber-100 group-hover:text-[#d4af37] transition-colors mb-1 tracking-wide">
             {item.title}

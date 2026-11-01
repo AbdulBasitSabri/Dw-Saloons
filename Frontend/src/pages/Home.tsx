@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Crown, MapPin, Clock, ArrowRight, Star, Heart, Play } from 'lucide-react';
+import { Calendar, MapPin,  ArrowRight } from 'lucide-react';
 import { SALON_INFO, SIGNATURE_VIDEOS, GENERAL_FAQS } from '../data/salonData';
 import { SignatureVideoReel } from '../components/SignatureVideoReel';
 import { FaqSection } from '../components/FaqSection';
@@ -12,7 +12,7 @@ import skincareImg from '../assets/images/home4.jfif';
 
 export const Home: React.FC = () => {
   return (
-    <div className="bg-[#000] text-[#fcedd8] min-h-screen">
+    <div className="`bg-[#000]` text-[#fcedd8] min-h-screen">
       {/* Hero Section */}
       <section className="relative px-4 lg:px-8 py-12 lg:py-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
@@ -66,49 +66,49 @@ export const Home: React.FC = () => {
             className="lg:col-span-5 relative"
           >
             <div className="grid grid-cols-2 gap-3 p-3 bg-[#2b0c19] border-2 border-[#d4af37]/35 rounded-3xl shadow-2xl shadow-black/50">
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-[#d4af37]/25 group">
+              <div className="relative `aspect-[4/5]` rounded-2xl overflow-hidden border border-[#d4af37]/25 group">
                 <img
                   src={heroBridalImg}
                   alt="DW Saloons Traditional Bridal"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute inset-0 `bg-gradient-to-t` from-black/50 to-transparent" />
                 <span className="absolute bottom-2 left-2 text-[10px] uppercase font-semibold text-[#f3d068] px-2 py-0.5 rounded bg-black/60 backdrop-blur-xs font-sans">
                   Royal Bridal
                 </span>
               </div>
 
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-[#d4af37]/25 group">
+              <div className="relative `aspect-[4/5]` rounded-2xl overflow-hidden border border-[#d4af37]/25 group">
                 <img
                   src={partyGlamImg}
                   alt="DW Saloons Soft Glam Look"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute inset-0 `bg-gradient-to-t` from-black/50 to-transparent" />
                 <span className="absolute bottom-2 left-2 text-[10px] uppercase font-semibold text-[#f3d068] px-2 py-0.5 rounded bg-black/60 backdrop-blur-xs font-sans">
                   Party Glam
                 </span>
               </div>
 
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-[#d4af37]/25 group">
+              <div className="relative `aspect-[4/5]` rounded-2xl overflow-hidden border border-[#d4af37]/25 group">
                 <img
                   src={mehndiImg}
                   alt="DW Saloons Festive Mehndi Art"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute inset-0 `bg-gradient-to-t` from-black/50 to-transparent" />
                 <span className="absolute bottom-2 left-2 text-[10px] uppercase font-semibold text-[#f3d068] px-2 py-0.5 rounded bg-black/60 backdrop-blur-xs font-sans">
                   Festive Mehndi
                 </span>
               </div>
 
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-[#d4af37]/25 group">
+              <div className="relative `aspect-[4/5]` rounded-2xl overflow-hidden border border-[#d4af37]/25 group">
                 <img
                   src={skincareImg}
                   alt="DW Saloons Organic Skin Care"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute inset-0 `bg-gradient-to-t` from-black/50 to-transparent" />
                 <span className="absolute bottom-2 left-2 text-[10px] uppercase font-semibold text-[#f3d068] px-2 py-0.5 rounded bg-black/60 backdrop-blur-xs font-sans">
                   Botanical Facial
                 </span>
@@ -119,7 +119,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Section 2: "THE BEST STUDIO YOU CHOOSE" (Matching video section) */}
-      <section className="py-16 lg:py-24 bg-[#000] border-t border-b border-[#d4af37]/20 relative overflow-hidden">
+      <section className="py-16 lg:py-24 `bg-[#000]` border-t border-b border-[#d4af37]/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Arched Salon Mirror Visual */}
@@ -128,14 +128,14 @@ export const Home: React.FC = () => {
               data-aos-duration="800"
               className="lg:col-span-6 flex justify-center"
             >
-              <div className="relative w-full max-w-lg aspect-[4/5] rounded-t-full rounded-b-3xl overflow-hidden border-4 border-[#d4af37]/50 shadow-2xl p-2 bg-[#2a0c1a]">
+              <div className="relative w-full max-w-lg `aspect-[4/5]` rounded-t-full rounded-b-3xl overflow-hidden border-4 border-[#d4af37]/50 shadow-2xl p-2 bg-[#2a0c1a]">
                 <div className="w-full h-full rounded-t-full rounded-b-2xl overflow-hidden relative">
                   <img
                     src={salonInteriorImg}
                     alt="DW Saloons Studio Interior"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                  <div className="absolute inset-0 `bg-gradient-to-t` from-black/70 via-transparent to-transparent" />
                   <div className="absolute bottom-5 left-0 right-0 text-center">
                     <span className="font-cursive text-3xl sm:text-4xl text-[#f3d068]">
                       Our studio, where every look begins
@@ -225,7 +225,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* FAQs Section */}
-      <div className="border-t border-[#d4af37]/20 bg-[#000]">
+      <div className="border-t border-[#d4af37]/20 `bg-[#000]`">
         <FaqSection
           title="Questions & Answers"
           subtitle="Everything you need to know about our studio bookings, artistry techniques, and bridal services."

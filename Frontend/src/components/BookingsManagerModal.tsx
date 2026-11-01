@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Calendar, Clock, User, Phone, Trash2, CheckCircle, AlertCircle, FileText } from 'lucide-react';
+import { X, Calendar, Clock,  Phone, Trash2, CheckCircle, AlertCircle, FileText } from 'lucide-react';
 import {  deleteBooking, updateBooking } from '../utils/storage';
 import type {  Booking } from '../utils/storage';
 
@@ -95,7 +95,7 @@ export const BookingsManagerModal: React.FC<BookingsManagerModalProps> = ({
         )}
 
         {/* Bookings List */}
-        <div className="p-5 overflow-y-auto space-y-3.5 flex-grow">
+        <div className="p-5 overflow-y-auto space-y-3.5 `flex-grow`">
           {filteredBookings.length === 0 ? (
             <div className="text-center py-12 text-amber-200/60 text-sm flex flex-col items-center gap-2">
               <AlertCircle className="w-8 h-8 text-[#d4af37]/50" />

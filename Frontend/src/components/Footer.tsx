@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MessageCircle, Check, Phone, Mail, MapPin } from 'lucide-react';
+import { MessageCircle, Check, Phone, MapPin } from 'lucide-react';
 import salonBgImg from '../assets/images/salon_interior_luxury_1792042031585.jpg';
 
 export const Footer: React.FC = () => {
@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="relative bg-[#000] text-amber-100/80 border-t border-[#d4af37]/30 overflow-hidden">
+    <footer className="relative `bg-[#000]` text-amber-100/80 border-t border-[#d4af37]/30 overflow-hidden">
       {/* Background Salon Watermark with Dark Luxury Gradient */}
       <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
         <img
@@ -78,7 +78,7 @@ export const Footer: React.FC = () => {
           alt="DW Saloons Luxury Studio"
           className="w-full h-full object-cover filter blur-sm"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#14040b] via-[#1a060e]/95 to-[#1f0913]/90" />
+        <div className="absolute inset-0 `bg-gradient-to-t` from-[#14040b] via-[#1a060e]/95 to-[#1f0913]/90" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 pt-16 pb-10">

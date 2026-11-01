@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { X, Heart, Eye, Calendar, ArrowRight } from 'lucide-react';
+import { X, Heart, Eye, Calendar } from 'lucide-react';
 import { GALLERY_ITEMS } from '../data/salonData';
 import type {GalleryItem } from '../data/salonData';
 
@@ -75,7 +75,7 @@ export const Gallery: React.FC = () => {
               data-aos="fade-up"
               data-aos-delay={(index % 6) * 100}
               onClick={() => setActiveItem(item)}
-              className="group relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#d4af37]/25 bg-[#290c19] shadow-lg cursor-pointer transition-all duration-300 hover:border-[#d4af37]/80 hover:shadow-2xl hover:-translate-y-1"
+              className="group relative `aspect-[4/3]` rounded-2xl overflow-hidden border border-[#d4af37]/25 bg-[#290c19] shadow-lg cursor-pointer transition-all duration-300 hover:border-[#d4af37]/80 hover:shadow-2xl hover:-translate-y-1"
             >
               <img
                 src={item.image}
@@ -84,7 +84,7 @@ export const Gallery: React.FC = () => {
               />
 
               {/* Scrim Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-5">
+              <div className="absolute inset-0 `bg-gradient-to-t` from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-5">
                 <div className="flex items-center justify-between">
                   <span className="text-[10px] font-semibold text-[#f3d068] bg-[#1a060d]/80 px-2.5 py-1 rounded-full border border-[#d4af37]/40">
                     {item.category}
@@ -143,7 +143,7 @@ export const Gallery: React.FC = () => {
               <X className="w-5 h-5" />
             </button>
 
-            <div className="relative aspect-[16/10] bg-black">
+            <div className="relative `aspect-[16/10]` bg-black">
               <img
                 src={activeItem.image}
                 alt={activeItem.title}

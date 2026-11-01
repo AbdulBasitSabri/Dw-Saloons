@@ -17,13 +17,13 @@ export const CatalogueCard: React.FC<CatalogueCardProps> = ({ pkg, onBookClick, 
       className="bg-[#290c19] border border-[#d4af37]/25 rounded-2xl overflow-hidden shadow-xl flex flex-col justify-between transition-all duration-300 hover:border-[#d4af37]/75 hover:shadow-2xl hover:-translate-y-1 group"
     >
       {/* Visual & Badge */}
-      <div className="relative aspect-[4/3] overflow-hidden bg-[#1a070e]">
+      <div className="relative `aspect-[4/3]` overflow-hidden bg-[#1a070e]">
         <img
           src={pkg.image}
           alt={pkg.title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#290c19] via-black/20 to-transparent" />
+        <div className="absolute inset-0 `bg-gradient-to-t` from-[#290c19] via-black/20 to-transparent" />
 
         {/* Top Category Badge */}
         <div className="absolute top-3 left-3 px-3 py-1 bg-[#1c0812]/90 backdrop-blur-md border border-[#d4af37]/50 rounded-full text-[11px] font-semibold text-[#f3d068] tracking-wide flex items-center gap-1.5 shadow-md">
@@ -33,12 +33,12 @@ export const CatalogueCard: React.FC<CatalogueCardProps> = ({ pkg, onBookClick, 
       </div>
 
       {/* Body Content */}
-      <div className="p-5 flex flex-col flex-grow justify-between">
+      <div className="p-5 flex flex-col `flex-grow` justify-between">
         <div>
           <h3 className="font-cursive text-3xl text-amber-100 group-hover:text-[#d4af37] transition-colors mb-1 tracking-wide">
             {pkg.title}
           </h3>
-          <p className="text-xs text-amber-200/75 leading-relaxed mb-4 min-h-[48px]">
+          <p className="text-xs text-amber-200/75 leading-relaxed mb-4 `min-h-[48px]`">
             {pkg.description}
           </p>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Heart, ShieldCheck, Star } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { SALON_INFO, TEAM_MEMBERS } from '../data/salonData';
 import { TeamCard } from '../components/TeamCard';
 import salonInteriorImg from '../assets/images/salon_interior_luxury_1792042031585.jpg';
@@ -81,14 +81,14 @@ export const AboutUs: React.FC = () => {
             data-aos-duration="800"
             className="lg:col-span-5 flex justify-center"
           >
-            <div className="w-full max-w-md aspect-[4/5] rounded-t-full rounded-b-3xl overflow-hidden border-4 border-[#d4af37]/45 p-2 bg-[#2a0c1a] shadow-2xl">
+            <div className="w-full max-w-md `aspect-[4/5]` rounded-t-full rounded-b-3xl overflow-hidden border-4 border-[#d4af37]/45 p-2 bg-[#2a0c1a] shadow-2xl">
               <div className="w-full h-full rounded-t-full rounded-b-2xl overflow-hidden relative group">
                 <img
                   src={salonInteriorImg}
                   alt="DW Saloons Studio Interior"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 `bg-gradient-to-t` from-black/80 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-4 right-4 text-center">
                   <span className="font-cursive text-2xl sm:text-3xl text-[#f3d068] block">
                     Our studio, where every look begins
